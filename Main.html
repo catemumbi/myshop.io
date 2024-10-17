@@ -1,0 +1,105 @@
+<div style="text-align:center; margin-top:40px;"><img src="images/pexels-pixabay-45201.jpg"width="50"height="50"></div>
+<body style="background-image:url('background1.jpg');background-size:cover;background-repeat:no repeat;">
+</body>
+<div style="text-align:center; margin-top:40px;">
+<a style="padding-right: 20px;" href="Home.html">Home</a>
+<a style="padding-right: 20px;"  href="About.html">About</a>
+<a style="padding-right: 20px;"  href="Services.html">Services</a>
+<a style="padding-right: 20px;"  href="products.html">Products</a>
+<a style="padding-right: 20px;" href="Contact.html">Contact</a>
+</div>
+
+<h1 style="font-size:50px;text-align:center">Mumbi'S Kiosk</h1>
+<p style="font-size:20px;text-align:center;line-height:30px;margin-bottom:50px">Our fruits are of high quality and mouth watering,<br> shopify with us to
+get the latest and best fruits we are offering.Healthy and fresh fruits. 
+<br>We assure you accountability  and effectiveness.</p>
+
+<div style="text-align:center;"><a style="font-size:20px; background-color:rgb(51, 0, 255); padding: 15px 35px 15px 35px; color: rgb(255, 255, 255);" href="https://www.google.com/">Read more</a></div>
+
+
+<hr style="width:60%;">
+
+
+<h1 style="font-size:50px;text-align:center">Our Items</h1>
+
+ <div id="items">
+            <div class="item">
+                <img src="images/FR10.jpg"width="100"height="100"align="left"; alt="item 1">
+                <p>Item 1-Ksh 20</p>
+                <button onclick="addToCart('item 1',20)">Add to Cart</button>
+                <a style="font-size:20px; background-color:red;a/>
+            </div>
+        </div>
+        <div class="item">
+            <img src="images/FR7 - Copy.jpg"width="100"height="100"align="Center" alt="item 2">
+            <p>Item 2-Ksh 20</p>
+            <button onclick="addToCart('item 2',20)">Add to Cart</button>   
+        </div>
+        <div class="item">
+            <img src="images/FR18.jpg"width="100"height="100"align="left" alt="item 3">
+            <p>Item 3-Ksh 25</p>
+            <button onclick="addToCart('item 3',25)">Add to Cart</button>
+
+        </div>
+        
+        </div>
+        <div class="item">
+            <img src="images/FR17.jpg"width="100"height="100"align="center" alt="item 5">
+            <p>Item 5-Ksh 300</p>
+            <button onclick="addToCart('item 5',300)">Add to Cart</button>
+        </div>
+        <div id="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total:<span id="total">0</span>Ksh</p>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+ <script>
+            let cart=[];
+            let tatal=0;
+            function addToCart(item,price){cart.push({item,price});
+        total +=price;
+    document.getElementByld('cart-items').innerHTML +='<li>${item}-Ksh ${price}</li>';
+document.getElementByld('total').innerText=total;
+}
+function checkout(){
+    //stimulate payment deduction alert('payment of Ksh ${total}deducted successfully.Thankyou for shopping with us!');
+    cart =[];
+    total =0;
+    document.getElementByld('cart-items').innerHTML ="";
+    document.getElementByld('total').innerText =total;  
+}
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
